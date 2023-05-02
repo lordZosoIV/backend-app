@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47155515-6495-4998-990f-614b96a4b289" name="Changes" comment="add todo">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/flatrcok/order/config/RabbitMQConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flatrcok/order/config/RabbitMQConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/flatrcok/order/entity/OrderEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flatrcok/order/entity/OrderEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/flatrcok/order/entity/OrderItemEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flatrcok/order/entity/OrderItemEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/flatrcok/order/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flatrcok/order/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/flatrcok/order/service/facade/OrderServiceFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flatrcok/order/service/facade/OrderServiceFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V1_1_0__init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1_1_0__init.sql" afterDir="false" />
+    <list default="true" id="47155515-6495-4998-990f-614b96a4b289" name="Changes" comment="add product app">
+      <change beforePath="$PROJECT_DIR$/../PackageAndDelivery" beforeDir="false" afterPath="$PROJECT_DIR$/../PackageAndDelivery" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +117,7 @@
       <updated>1683019238303</updated>
       <workItem from="1683019239426" duration="5992000" />
       <workItem from="1683032659183" duration="9000" />
-      <workItem from="1683033770832" duration="4077000" />
+      <workItem from="1683033770832" duration="4417000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1683019582109</created>
@@ -153,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683036947158</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add product app">
+      <created>1683038461971</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1683038461971</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,7 +166,8 @@
     <MESSAGE value="remove unnecessary file" />
     <MESSAGE value="add order with dummy q implementation" />
     <MESSAGE value="add todo" />
-    <option name="LAST_COMMIT_MESSAGE" value="add todo" />
+    <MESSAGE value="add product app" />
+    <option name="LAST_COMMIT_MESSAGE" value="add product app" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
