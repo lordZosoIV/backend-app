@@ -13,8 +13,17 @@ public class UserUpdateRequest {
     @NotEmpty
     @Email
     private String email;
+
     @NotEmpty
     private String name;
+
     @NotEmpty
     private String password;
+
+    @NotEmpty
+    private String address;
+
+    @NotEmpty
+    private String phoneNumber;
+
 }

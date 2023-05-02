@@ -4,19 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47155515-6495-4998-990f-614b96a4b289" name="Changes" comment="remove unnecessary file">
-      <change afterPath="$PROJECT_DIR$/../notification/src/main/java/com/flatrock/notification/entity/NotificationEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../notification/src/main/java/com/flatrock/notification/entity/model/NotificationType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../notification/src/main/java/com/flatrock/notification/model/Notification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../notification/src/main/java/com/flatrock/notification/model/NotificationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../notification/src/main/java/com/flatrock/notification/repository/NotificationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../notification/src/main/java/com/flatrock/notification/service/NotificationQueueListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../notification/src/main/java/com/flatrock/notification/service/SMSService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../notification/src/main/resources/db/migration/V1_1_0__init.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flatrcok/order/service/queue/external/notification/model/Notification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/flatrcok/order/service/queue/external/notification/service/NotificationQueueService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    <list default="true" id="47155515-6495-4998-990f-614b96a4b289" name="Changes" comment="add order with dummy q implementation">
+      <change beforePath="$PROJECT_DIR$/../auth-service/src/main/java/com/flatrock/authservice/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../auth-service/src/main/java/com/flatrock/authservice/entity/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auth-service/src/main/java/com/flatrock/authservice/model/request/UserRegistrationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../auth-service/src/main/java/com/flatrock/authservice/model/request/UserRegistrationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auth-service/src/main/java/com/flatrock/authservice/model/request/UserUpdateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../auth-service/src/main/java/com/flatrock/authservice/model/request/UserUpdateRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auth-service/src/main/resources/db/migration/V1_1_0__init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../auth-service/src/main/resources/db/migration/V1_1_0__init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../auth-service/src/main/resources/db/migration/V1_1_1__test_users.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../auth-service/src/main/resources/db/migration/V1_1_1__test_users.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +103,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1683019238303</updated>
-      <workItem from="1683019239426" duration="5300000" />
+      <workItem from="1683019239426" duration="5992000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1683019582109</created>
@@ -126,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683019684418</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add order with dummy q implementation">
+      <created>1683024676114</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683024676114</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,7 +136,8 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="init" />
     <MESSAGE value="remove unnecessary file" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove unnecessary file" />
+    <MESSAGE value="add order with dummy q implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="add order with dummy q implementation" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

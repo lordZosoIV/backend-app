@@ -21,4 +21,10 @@ public class UserRegistrationRequest {
     @NotEmpty
     private String password;
 
+    @NotEmpty
+    private String address;
+
+    @NotEmpty
+    private String phoneNumber;
+
 }

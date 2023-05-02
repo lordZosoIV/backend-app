@@ -34,6 +34,9 @@ public class UserEntity {
     @Column(nullable = false)
     private Boolean active;
 
+    private String address;
+    private String phoneNumber;
+
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
             name = "users_roles",
