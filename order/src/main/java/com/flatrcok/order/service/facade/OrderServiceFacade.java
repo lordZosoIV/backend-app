@@ -28,7 +28,7 @@ public class OrderServiceFacade {
         OrderEntity order = orderService.createOrder(request, SecurityUtils.getAuthenticatedUserId());
 
         productQueueService.decrementQuantity(request.getOrderItems().stream().map(PurchaseRequest::transform).toList());
-        notificationQueueService.sendMessage(List.of(new Notification("TEST MSG", "TEST USER")));
+        notificationQueueService.sendMessage(List.of(new Notification("TEST MSG", "TEST USER"))); // TODO dummy
 
     }
 
