@@ -10,8 +10,8 @@ public class RabbitMQConfig {
     private final String exchangeName;
     private final String notificationQueueName;
     private final String notificationRoutingKey;
-    private final String padQueueName;
-    private final String padRoutingKey;
+    private final String packingAndDeliverQueueName;
+    private final String packingAndDeliverRoutingKey;
     private final String productQueueName;
     private final String productRoutingKey;
 
@@ -19,16 +19,16 @@ public class RabbitMQConfig {
             @Value("${rabbitmq.exchangeName}") String exchangeName,
             @Value("${rabbitmq.notification.queueName}") String notificationQueueName,
             @Value("${rabbitmq.notification.routingKey}") String notificationRoutingKey,
-            @Value("${rabbitmq.pad.queueName}") String padQueueName,
-            @Value("${rabbitmq.pad.routingKey}") String padRoutingKey,
+            @Value("${rabbitmq.packingAndDeliver.queueName}") String padQueueName,
+            @Value("${rabbitmq.packingAndDeliver.routingKey}") String padRoutingKey,
             @Value("${rabbitmq.product.queueName}") String productQueueName,
             @Value("${rabbitmq.product.routingKey}") String productRoutingKey
     ) {
         this.exchangeName = exchangeName;
         this.notificationQueueName = notificationQueueName;
         this.notificationRoutingKey = notificationRoutingKey;
-        this.padQueueName = padQueueName;
-        this.padRoutingKey = padRoutingKey;
+        this.packingAndDeliverQueueName = padQueueName;
+        this.packingAndDeliverRoutingKey = padRoutingKey;
         this.productQueueName = productQueueName;
         this.productRoutingKey = productRoutingKey;
     }

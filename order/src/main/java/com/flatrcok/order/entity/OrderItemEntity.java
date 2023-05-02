@@ -1,10 +1,7 @@
 package com.flatrcok.order.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.math.BigDecimal;
 
@@ -14,13 +11,12 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @Entity
 @Table(name = "order_items")
+@Builder
 public class OrderItemEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private Long productId;
-    private String productName;
-    private BigDecimal productPrice;
     private Integer quantity;
     private Long sellerId;
     @ManyToOne(fetch = FetchType.EAGER)
