@@ -6,14 +6,12 @@ import com.flatrcok.order.model.OrderItem;
 import com.flatrcok.order.model.request.OrderRequest;
 import com.flatrcok.order.repository.OrderItemRepository;
 import com.flatrcok.order.repository.OrderRepository;
-import com.flatrcok.order.util.SecurityUtils;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 
 @Service
@@ -30,7 +28,7 @@ public class OrderService {
                 .customerId(customerId) // TODO need phone
                 .build();
         order = orderReposity.save(order);
-        for(OrderItem item : request.getOrderItems()){
+        for (OrderItem item : request.getOrderItems()) {
             OrderItemEntity entity = OrderItemEntity.builder()
                     .productId(item.getProductId())
                     .quantity(item.getQuantity())
@@ -42,7 +40,6 @@ public class OrderService {
 
         result = orderItemRepository.saveAll(result);
         order.setOrderItems(result);
-
 
 
         return orderReposity.save(order);

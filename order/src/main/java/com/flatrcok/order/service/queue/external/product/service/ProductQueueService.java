@@ -1,4 +1,5 @@
 package com.flatrcok.order.service.queue.external.product.service;
+
 import com.flatrcok.order.config.RabbitMQConfig;
 import com.flatrcok.order.service.queue.external.product.model.PurchaseRequest;
 import com.google.gson.Gson;
