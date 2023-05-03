@@ -1,7 +1,7 @@
 ##  TEST TASK
 
-    This project is a collection of microservices that work together to provide 
-    a complete e-commerce solution. The microservices are built using Spring Boot 
+    This project is a collection of microservices that work together to provide
+    a complete e-commerce solution. The microservices are built using Spring Boot
     and communicate with each other using RabbitMQ. The microservices are deployed
     using Docker containers.
 
@@ -9,7 +9,7 @@
 
     The following microservices are included in this project:
 
-    Authorization Service: This microservice is responsible for handling user 
+    Authorization Service: This microservice is responsible for handling user
     authentication and authorization. It runs on port 8080 and provides a Swagger
     UI for testing and exploring the API.
 
@@ -21,8 +21,8 @@
     to customers about their orders. It runs on port 8082 and communicates with the
     Order Service to get information about orders that need to be notified.
 
-    Product Service: This microservice is responsible for managing products in 
-    the e-commerce store. It runs on port 8083 and provides APIs for creating, 
+    Product Service: This microservice is responsible for managing products in
+    the e-commerce store. It runs on port 8083 and provides APIs for creating,
     updating, and deleting products.
 
     Package and Delivery Service: This microservice is responsible for managing
@@ -34,8 +34,8 @@
 
 
     Running the Microservices
-    To run the microservices, you need to have Docker installed on your system. 
-    Once Docker is installed, you can run the following command to start all 
+    To run the microservices, you need to have Docker installed on your system.
+    Once Docker is installed, you can run the following command to start all
     the microservices: 𝙙𝙤𝙘𝙠𝙚𝙧-𝙘𝙤𝙢𝙥𝙤𝙨𝙚 𝙪𝙥
 
 ## SWAGGER URLS
