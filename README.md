@@ -9,23 +9,34 @@
 
     The following microservices are included in this project:
 
-    Authorization Service: This microservice is responsible for handling user authentication and authorization. It runs on port 8080 and provides a Swagger UI for testing and exploring the API.
+    Authorization Service: This microservice is responsible for handling user 
+    authentication and authorization. It runs on port 8080 and provides a Swagger
+    UI for testing and exploring the API.
 
-    Order Service: This microservice is responsible for managing customer orders. It runs on port 8081 and communicates with the Authorization Service to ensure that only authorized users can place orders.
+    Order Service: This microservice is responsible for managing customer orders.
+    It runs on port 8081 and communicates with the Authorization Service to ensure
+    that only authorized users can place orders.
 
-    Notification Service: This microservice is responsible for sending notifications to customers about their orders. It runs on port 8082 and communicates with the Order Service to get information about orders that need to be notified.
+    Notification Service: This microservice is responsible for sending notifications
+    to customers about their orders. It runs on port 8082 and communicates with the
+    Order Service to get information about orders that need to be notified.
 
-    Product Service: This microservice is responsible for managing products in the e-commerce store. It runs on port 8083 and provides APIs for creating, updating, and deleting products.
+    Product Service: This microservice is responsible for managing products in 
+    the e-commerce store. It runs on port 8083 and provides APIs for creating, 
+    updating, and deleting products.
 
-    Package and Delivery Service: This microservice is responsible for managing the packaging and delivery of orders. It runs on port 8084 and communicates with the Order Service to get information about orders that need to be packaged and delivered.
+    Package and Delivery Service: This microservice is responsible for managing
+    the packaging and delivery of orders. It runs on port 8084 and communicates with
+    the Order Service to get information about orders that need to be packaged and delivered.
 
 
 ## Running the Microservices
 
 
     Running the Microservices
-    To run the microservices, you need to have Docker installed on your system. Once Docker is installed,
-    you can run the following command to start all the microservices: 𝙙𝙤𝙘𝙠𝙚𝙧-𝙘𝙤𝙢𝙥𝙤𝙨𝙚 𝙪𝙥
+    To run the microservices, you need to have Docker installed on your system. 
+    Once Docker is installed, you can run the following command to start all 
+    the microservices: 𝙙𝙤𝙘𝙠𝙚𝙧-𝙘𝙤𝙢𝙥𝙤𝙨𝙚 𝙪𝙥
 
 ## SWAGGER URLS
 
