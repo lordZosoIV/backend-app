@@ -25,8 +25,7 @@
 
     Running the Microservices
     To run the microservices, you need to have Docker installed on your system. Once Docker is installed,
-    you can run the following command to start all the microservices: docker-compose up
-
+    you can run the following command to start all the microservices: 𝙙𝙤𝙘𝙠𝙚𝙧-𝙘𝙤𝙢𝙥𝙤𝙨𝙚 𝙪𝙥
 
 ## SWAGGER URLS
 
