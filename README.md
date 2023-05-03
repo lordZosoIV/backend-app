@@ -41,7 +41,7 @@
 ## SWAGGER URLS
 
     Authorization Service: http://localhost:8080/swagger-ui/index.html
-    Order Service: http://localhost:8081
-    Notification Service: http://localhost:8082
-    Product Service: http://localhost:8083
-    Package and Delivery Service: http://localhost:8084
+    Order Service: http://localhost:8081/swagger-ui/index.html
+    Notification Service: http://localhost:8082/swagger-ui/index.html
+    Product Service: http://localhost:8083/swagger-ui/index.html
+    Package and Delivery Service: http://localhost:8084/swagger-ui/index.html
