@@ -1,4 +1,4 @@
-package com.flatrcok.order.service.queue.external.notification.model;
+package com.flatrcok.order.service.external.queue.notification.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,6 +10,8 @@ import lombok.NoArgsConstructor;
 public class Notification {
 
     private String message;
+
+    private String type;
 
     private String recipient;
 

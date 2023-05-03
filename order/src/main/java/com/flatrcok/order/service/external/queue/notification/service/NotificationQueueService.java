@@ -1,7 +1,7 @@
-package com.flatrcok.order.service.queue.external.product.service;
+package com.flatrcok.order.service.external.queue.notification.service;
 
 import com.flatrcok.order.config.RabbitMQConfig;
-import com.flatrcok.order.service.queue.external.product.model.PurchaseRequest;
+import com.flatrcok.order.service.external.queue.notification.model.Notification;
 import com.google.gson.Gson;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -13,15 +13,15 @@ import java.util.List;
 @Slf4j
 @Service
 @RequiredArgsConstructor
-public class ProductQueueService {
+public class NotificationQueueService {
     private final RabbitTemplate rabbitTemplate;
     private final RabbitMQConfig rabbitMQConfig;
     private final Gson gson;
 
-    public void decrementQuantity(List<PurchaseRequest> orderItems) {
-        String json = gson.toJson(orderItems);
-        logOutgoingMessage(rabbitMQConfig.getExchangeName(), rabbitMQConfig.getProductRoutingKey(), json);
-        rabbitTemplate.convertAndSend(rabbitMQConfig.getExchangeName(), rabbitMQConfig.getProductRoutingKey(), json);
+    public void sendMessage(List<Notification> notificationDtos) {
+        String json = gson.toJson(notificationDtos);
+        logOutgoingMessage(rabbitMQConfig.getExchangeName(), rabbitMQConfig.getNotificationRoutingKey(), json);
+        rabbitTemplate.convertAndSend(rabbitMQConfig.getExchangeName(), rabbitMQConfig.getNotificationRoutingKey(), json);
     }
 
     private void logOutgoingMessage(String exchange, String routingKey, String message) {

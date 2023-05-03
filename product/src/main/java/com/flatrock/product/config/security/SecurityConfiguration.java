@@ -43,7 +43,7 @@ public class SecurityConfiguration {
                     // swagger and openapi
                     authorizeCustomizer.requestMatchers("/v3/api-docs/**").permitAll();
                     authorizeCustomizer.requestMatchers("/swagger-ui/**").permitAll();
-                    authorizeCustomizer.requestMatchers(HttpMethod.GET, "/api/**").authenticated();
+                    authorizeCustomizer.requestMatchers(HttpMethod.GET, "/api/**").permitAll();
                 })
                 .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class)
                 .exceptionHandling(exceptionHandlingCustomizer -> {

@@ -14,4 +14,5 @@ public class DeliverCreateRequest {
     private Long orderId;
     private BigDecimal totalPrice;
     private Long customerId;
+    private List<Orders> orderItems;
 }

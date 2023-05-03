@@ -1,8 +1,8 @@
-package com.flatrcok.order.service.queue.external.delivery.service;
+package com.flatrcok.order.service.external.queue.delivery.service;
 
 
 import com.flatrcok.order.config.RabbitMQConfig;
-import com.flatrcok.order.service.queue.external.delivery.model.DeliverCreateRequest;
+import com.flatrcok.order.service.external.queue.delivery.model.DeliverCreateRequest;
 import com.google.gson.Gson;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

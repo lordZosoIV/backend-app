@@ -18,4 +18,5 @@ public class OrderRequest {
     @Size(min = 1)
     @Valid
     private List<OrderItem> orderItems;
+    private String buyerPhone;
 }

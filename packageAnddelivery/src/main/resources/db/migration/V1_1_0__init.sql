@@ -1,9 +1,55 @@
-CREATE TABLE deliveries
-(
-    id         SERIAL PRIMARY KEY,
-    status     VARCHAR(64) NOT NULL,
-    order_id   BIGINT      NOT NULL,
-    amount     DOUBLE PRECISION,
-    created_at TIMESTAMP DEFAULT NOW(),
-    updated_at TIMESTAMP DEFAULT NOW()
-);
+-- -- CREATE TABLE orders
+-- -- (
+-- --     id              SERIAL PRIMARY KEY,
+-- --     system_order_id BIGINT,
+-- --     total_price     DECIMAL,
+-- --     customer_id     BIGINT,
+-- --     created_at      TIMESTAMP DEFAULT NOW(),
+-- --     updated_at      TIMESTAMP DEFAULT NOW()
+-- -- );
+-- --
+-- -- CREATE TABLE order_items
+-- -- (
+-- --     id                   SERIAL PRIMARY KEY,
+-- --     system_order_item_id BIGINT,
+-- --     product_id           BIGINT,
+-- --     product_name         VARCHAR(64),
+-- --     product_price        DECIMAL,
+-- --     quantity             INTEGER,
+-- --     seller_id            BIGINT,
+-- --     order_id             BIGINT,
+-- --     FOREIGN KEY (order_id) REFERENCES orders (id) ON DELETE CASCADE
+-- -- );
+--
+-- CREATE TABLE orders
+-- (
+--     id          SERIAL PRIMARY KEY,
+--     order_id    BIGINT,
+--     total_price DECIMAL(10, 2),
+--     customer_id BIGINT,
+--     created_at  TIMESTAMP,
+--     updated_at  TIMESTAMP
+-- );
+--
+-- CREATE TABLE order_items
+-- (
+--     id         SERIAL PRIMARY KEY,
+--     product_id BIGINT,
+--     quantity   INT,
+--     seller_id  BIGINT,
+--     order_id   BIGINT
+-- );
+--
+-- ALTER TABLE order_items
+--     ADD CONSTRAINT fk_order_id FOREIGN KEY (order_id) REFERENCES orders (id) ON DELETE CASCADE;
+--
+--
+-- CREATE TABLE deliveries
+-- (
+--     id         SERIAL PRIMARY KEY,
+--     status     VARCHAR(64) NOT NULL,
+--     order_id   BIGINT      NOT NULL,
+--     created_at TIMESTAMP DEFAULT NOW(),
+--     updated_at TIMESTAMP DEFAULT NOW(),
+--     FOREIGN KEY (order_id) REFERENCES orders (id) ON DELETE CASCADE
+-- );

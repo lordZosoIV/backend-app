@@ -1,7 +1,6 @@
 package com.flatrock.notification.service;
 
 import com.flatrock.notification.model.Notification;
-import com.flatrock.notification.model.NotificationRequest;
 import com.flatrock.notification.service.facade.NotificationServiceFacade;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -25,9 +24,9 @@ public class NotificationQueueListener {
     public void receiveMessage(String message) {
         log.info("Received message: " + message);
         String messageBody = new String(message.getBytes(), StandardCharsets.UTF_8);
-        Type notificationListType = new TypeToken<List<NotificationRequest>>() {
+        Type notificationListType = new TypeToken<List<Notification>>() {
         }.getType();
-        List<NotificationRequest> notifications = gson.fromJson(messageBody, notificationListType);
+        List<Notification> notifications = gson.fromJson(messageBody, notificationListType);
 
 
         notificationServiceFacade.sendNotifications(notifications);

@@ -1,4 +1,4 @@
-package com.flatrcok.order.service.queue.external.product.model;
+package com.flatrcok.order.service.external.queue.product.model;
 
 import com.flatrcok.order.model.OrderItem;
 import lombok.AllArgsConstructor;

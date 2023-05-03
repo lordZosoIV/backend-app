@@ -16,9 +16,15 @@ import java.util.List;
 public class ProductController {
     private final ProductServiceFacade productServiceFacade;
 
+    @GetMapping("/filter")
+    public ResponseEntity<List<Product>> filter(@RequestParam(required = false) List<Long> ids) {
+        return ResponseEntity.ok(productServiceFacade.getProducts(ids));
+    }
+
+
     @GetMapping
-    public ResponseEntity<List<Product>> getProducts() {
-        return ResponseEntity.ok(productServiceFacade.getProducts());
+    public ResponseEntity<List<Product>> getAll() {
+        return ResponseEntity.ok(productServiceFacade.getAllProducts());
     }
 
     @GetMapping("/{id}")

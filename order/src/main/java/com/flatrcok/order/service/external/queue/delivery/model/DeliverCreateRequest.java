@@ -1,10 +1,11 @@
-package com.flatrcok.order.service.queue.external.delivery.model;
+package com.flatrcok.order.service.external.queue.delivery.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -13,4 +14,5 @@ public class DeliverCreateRequest {
     private Long orderId;
     private BigDecimal totalPrice;
     private Long customerId;
+    private List<Orders> orderItems;
 }

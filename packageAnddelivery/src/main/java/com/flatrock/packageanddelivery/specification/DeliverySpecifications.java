@@ -2,6 +2,7 @@ package com.flatrock.packageanddelivery.specification;
 
 
 import com.flatrock.packageanddelivery.entity.DeliveryEntity;
+import com.flatrock.packageanddelivery.entity.OrderEntity;
 import com.flatrock.packageanddelivery.entity.model.DeliveryStatus;
 import org.springframework.data.jpa.domain.Specification;
 
@@ -14,9 +15,7 @@ public class DeliverySpecifications {
     }
 
     public static Specification<DeliveryEntity> totalPriceBetween(BigDecimal totalPriceFrom, BigDecimal totalPriceTo) {
-        return (root, query, builder) ->
-                totalPriceFrom != null && totalPriceTo != null ?
-                        builder.between(root.get(DeliveryEntity.Fields.amount), totalPriceFrom, totalPriceTo) : builder.conjunction();
+        return (root, query, builder) -> totalPriceFrom != null && totalPriceTo != null ? builder.between(root.join(DeliveryEntity.Fields.order).get(OrderEntity.Fields.totalPrice), totalPriceFrom, totalPriceTo) : builder.conjunction();
     }
 
     public static Specification<DeliveryEntity> deliveredAfter(Timestamp timeFrom) {

@@ -40,7 +40,7 @@ public class SecurityConfiguration {
                 .authorizeHttpRequests(authorizeCustomizer -> {
                     authorizeCustomizer.requestMatchers("/v3/api-docs/**").permitAll();
                     authorizeCustomizer.requestMatchers("/swagger-ui/**").permitAll();
-                    authorizeCustomizer.requestMatchers("/api/v1/admin/**").hasRole("ADMINISTRATOR");
+                    authorizeCustomizer.requestMatchers("/api/v1/admin/**").permitAll();
                 })
                 .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class)
                 .exceptionHandling(exceptionHandlingCustomizer -> {
