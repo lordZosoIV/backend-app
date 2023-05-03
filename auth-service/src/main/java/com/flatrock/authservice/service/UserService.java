@@ -29,6 +29,8 @@ public class UserService {
         UserEntity userEntity = UserEntity.builder()
                 .name(request.getName())
                 .email(request.getEmail())
+                .phoneNumber(request.getPhoneNumber())
+                .address(request.getAddress())
                 .password(passwordEncoder.encode(request.getPassword()))
                 .roles(List.of(role))
                 .active(true)
